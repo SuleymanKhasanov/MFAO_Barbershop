@@ -11,11 +11,20 @@
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.7",
     "nodemon": "^3.1.9",
-    "prisma": "^6.2.1"
+    "prisma": "^6.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   },
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "start:dev": "ts-node src/app.ts"
   },
   "author": "",
   "license": "ISC",

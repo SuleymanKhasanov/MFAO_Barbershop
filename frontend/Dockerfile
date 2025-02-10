@@ -1,12 +1,19 @@
-FROM node:18
+# Используем базовый образ Node.js
+FROM node:18-alpine
 
+# Устанавливаем рабочую директорию
 WORKDIR /app
 
-COPY package*.json ./
+# Копируем файлы package.json и package-lock.json
+COPY package.json package-lock.json ./
+
+# Устанавливаем зависимости
 RUN npm install
 
-# Указываем по умолчанию, что папка node_modules не будет перезаписываться
-VOLUME [ "/app/node_modules" ]
 
-# В режиме разработки мы не копируем весь проект — это делает volume
+# Копируем весь проект
+COPY . .
+
+
+# Запускаем приложение с Turbopack
 CMD ["npm", "run", "dev"]

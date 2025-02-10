@@ -1,0 +1,4 @@
+{
+	"pattern": "^(main|develop|feature|bugfix|hotfix|release)/[a-z0-9-]+$",
+	"errorMessage": "❌ Имя ветки должно начинаться с main, develop, feature, bugfix, hotfix или release/, а затем содержать только маленькие буквы, цифры и дефисы."
+}

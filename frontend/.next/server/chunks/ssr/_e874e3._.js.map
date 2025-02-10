@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///app/src/app/layout.tsx"],"sourcesContent":["import type { Metadata } from 'next';\n\nexport const metadata: Metadata = {\n  title: 'Название вашего приложения',\n  description: 'Описание вашего приложения',\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"ru\">\n      <body> Привет{children}</body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;;gBAAK;gBAAQ;;;;;;;;;;;;AAGpB"}},
-    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":["file:///app/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,0HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0]}},
-    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
